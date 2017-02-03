@@ -63,6 +63,8 @@ var getRightChildIndex = function(index) {
 	return 2 * index + 2; 	// index + 1, since array starts from index 0
 };
 
-var arr = [5,4,2,7,9,0,6,3,8,1];
+var exportAbleHeapSort = function(array){
+	return heapSort([].concat(array)); // So that we do not change the input array
+};
 
-console.log(heapSort(arr));
+module.exports = exportAbleHeapSort;

@@ -51,9 +51,4 @@ var mergeSort = function(array, start, end){
 	return array;
 };
 
-
-
-var arr = [5,4,2,7,9,0,6,3,8,1];
-
-var mergedArr = mergeSort(arr, 0, arr.length-1);
-console.log(mergedArr.toString());
+module.exports = mergeSort;

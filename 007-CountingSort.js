@@ -25,12 +25,6 @@ var countingSort = function (array) {
 	return sortedArray;
 }
 
-
-var arr = [5,4,2,7,9,0,8,1,6,3];
-
-console.log(countingSort(arr));
-
-
 // incase Math.max.apply doesn't work for you
 var getMax = function(array){
 	var max = array[0]; 		// will return undefined for empty array
@@ -41,5 +35,7 @@ var getMax = function(array){
 	});
 	return max;
 }
+
+module.exports = countingSort;
 
 // console.log(getMax(arr));

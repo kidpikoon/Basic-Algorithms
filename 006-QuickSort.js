@@ -5,8 +5,8 @@
 // This code is borrowed from Rijul Luman : https://github.com/kidpikoon/Basic-Algorithms
 
 var quickSort = function (array, start, end) {
-	start == null ? start = 0 : null;
-	end   == null ? end   = array.length - 1 : null;
+	// start == null ? start = 0 : null;
+	// end   == null ? end   = array.length - 1 : null;
 
 	if(start < end){
 		var mid = partiton(array, start, end);
@@ -36,6 +36,11 @@ var partiton = function(array, start, end){
 	return j;
 };
 
-var arr = [5,4,2,7,9,0,8,1,6,3];
+var exportAbleQuickSort = function(array){
+	if(!array.length){
+		return array;
+	}
+	return quickSort([].concat(array), 0, array.length - 1);
+};
 
-console.log(quickSort(arr));
+module.exports = exportAbleQuickSort;
