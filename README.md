@@ -1,5 +1,6 @@
 # Basic-Algorithms
 
+Auther: Rijul Luman. 
 I am writing all the basic algorithms like sorting, searching, etc. Using javascript (Node.js) to help fellow coders. 
 
 If you would like to use any part of this projects code in your project, just add the following comment just above the code: 
